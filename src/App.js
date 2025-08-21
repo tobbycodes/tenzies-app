@@ -21,6 +21,8 @@ function App() {
   const buttonFocus = React.useRef(null)
   //The Function for generating "Random Dice Numbers from 1 to 6"
   //Converting it from an arrray to an array objects
+
+  //For Checking if I won the game using Array.prototype.every, Mastermind for refreshing and updating the UI component
   const gameWon = dice.every(die=> die.isHeld) &&  
   dice.every(die=> die.value === dice[0].value)
    //Creating a UseEffect Cause we are trying to access a value outside the system
